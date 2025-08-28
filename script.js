@@ -1,0 +1,22 @@
+const btn_agregarArbol = document.getElementById('btn_agregarArbol');
+const btn_quitarArbol = document.getElementById('btn_quitarArbol');
+const campo = document.querySelector('.campo');
+
+const sembrar = ()=> {
+    const nuevoArbol = document.createElement('div');
+    nuevoArbol.innerHTML = '<svg id="Layer_1" enable-background="new 0 0 50 50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><g><g><g fill="#60ae8e"><path d="m25 0c7.6 1.4 8.1 10.3 8.1 10.3s9.4-.4 9.6 10.6c.1 10.9-8.1 15.2-17.7 13.4z"/><path d="m25 0c-7.6 1.4-8.1 10.3-8.1 10.3s-9.5-.4-9.6 10.6c-.1 10.9 8.1 15.2 17.7 13.4z"/></g><g fill="#31414e"><path d="m24.3 10.7-1 38.8h3.8l-1.6-38.8z"/><g><path d="m25.6 35s1.8-3.7 9.1-7.4l.2.8s-6.7 4.7-8.8 7.7z"/><path d="m25.5 27.6s4.4-3 6.5-6.9l.6.7s-3.5 6.2-6.9 7.5z"/><path d="m25.6 21.6s2.1-1 3.7-3.1l.5 1s-3.6 4-4.6 4z"/><path d="m25.2 16.4s1.3-.8 3.4-3l.8.7s-3.4 3.9-4.3 3.7z"/></g><g><path d="m24.5 32.3s-1.8-3.7-9.1-7.4l-.2.8s6.7 4.7 8.8 7.7z"/><path d="m24.7 24.9s-4.4-3-6.5-6.9l-.6.7s3.5 6.2 6.9 7.5z"/><path d="m24.5 18.8s-2.1-1-3.7-3.1l-.5 1s3.6 4 4.6 4z"/><path d="m25 13.7s-1.3-.8-3.4-3l-.8.7s3.4 3.9 4.3 3.7z"/></g></g></g><path d="m22.1 49.3h6.2v.7h-6.2z" fill="#31414e"/></g></svg>';
+
+    nuevoArbol.setAttribute('class' , 'arbol');
+    campo.appendChild(nuevoArbol);
+}
+
+const cortar = ()=> {
+	const arbol = campo.querySelector('.arbol')
+
+	if(arbol) {
+		campo.removeChild(arbol)
+	}
+}
+
+btn_agregarArbol.addEventListener( 'click' , sembrar );
+btn_quitarArbol.addEventListener( 'click' , cortar );
