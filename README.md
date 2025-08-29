@@ -3,7 +3,7 @@
 ![Portada del Proyecto](Screenshot_1.jpg)
 
 ## 📌 Descripción
-Aplicación que recrea una parcela donde se siembra y corta árboles, desarrollada en HTML, CSS y Javascript. Es una analogía, que permite crear, eliminar elementos '<div>', asignar un código '<svg>'' de la imagen de un árbol. 
+Aplicación que recrea una parcela donde se siembra y corta árboles, desarrollada en HTML, CSS y Javascript. Es una analogía, que permite crear, eliminar elementos `<div>`, asignar un código `<svg>` de la imagen de un árbol. 
 
 ---
 
@@ -17,7 +17,7 @@ Aplicación que recrea una parcela donde se siembra y corta árboles, desarrolla
 ## 🎯 Características
 - ✅ Selección elementos del DOM.
 - ✅ Crear elemento, incluir contenido html, atributos en el nodo, agregarlo al DOM y eliminar nodos del DOM.
-- ✅ Asignación de eventos
+- ✅ Asignación de eventos.
 
 ---
 
